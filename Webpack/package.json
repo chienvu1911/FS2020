@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.common.js",
-    "production": "webpack --config webpack.prod.js"
+    "dev": "webpack --config webpack.common.js",
+    "production": "webpack --config webpack.prod.js",
+    "serve": "webpack-dev-server --config webpack.common.js --watch --open"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -26,6 +27,7 @@
     "terser-webpack-plugin": "^2.3.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
   }
 }

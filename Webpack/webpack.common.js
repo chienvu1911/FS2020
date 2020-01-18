@@ -53,5 +53,9 @@ module.exports = {
             chunks: ['product']
         })
     ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist") 
+        //đọc content từ thư mục dist 
+    },
     mode: "development"
 }
