@@ -18,6 +18,9 @@ class UpdateState extends Component {
     }
 
     render() {
+        if (this.state.data.name === 'chien') {
+            throw new Error ('not use name of author')
+        }
         return (
             <div>
                 {this.state.data.name}
