@@ -11,8 +11,8 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, "./dist"),
-        publicPath: 'dist/'
+        path: path.resolve(__dirname, "dist"),
+        publicPath: ''
     },
     module:{
         rules:[
@@ -54,7 +54,8 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: path.join(__dirname, "dist") 
+        contentBase: path.join(__dirname, 'dist'),
+        index: "index.html"
         //đọc content từ thư mục dist 
     },
     mode: "development"

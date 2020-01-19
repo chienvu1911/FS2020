@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --config webpack.common.js",
-    "production": "webpack --config webpack.prod.js",
+    "production": "webpack --config webpack.production.js",
     "serve": "webpack-dev-server --config webpack.common.js --watch --open"
   },
   "devDependencies": {

@@ -3,6 +3,6 @@ import addImage from './add-image';
 import Button from './button';
 
 hello();
-// addImage();
+addImage();
 let button = new Button();
 button.render();
