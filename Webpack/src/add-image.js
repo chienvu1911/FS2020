@@ -5,8 +5,8 @@ function addImage() {
     img.alt = 'avatar';
     img.src = avatar;
 
-    const body = document.querySelector("body");
-    body.appendChild(img);
+    const body = $("body");
+    body.append(img);
 }
 
 export default addImage;
