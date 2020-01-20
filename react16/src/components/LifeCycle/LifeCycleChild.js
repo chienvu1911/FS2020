@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class LifeCycleChild extends Component {
+class LifeCycleChild extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,10 +25,10 @@ class LifeCycleChild extends Component {
         })
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log('shouldComponentUpdate inside child component', nextProps, nextState);
-        return nextProps.name !== this.props.name || nextState.name !== this.state.name;
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     console.log('shouldComponentUpdate inside child component', nextProps, nextState);
+    //     return nextProps.name !== this.props.name || nextState.name !== this.state.name;
+    // }
     
     componentWillUpdate(nextProps, nextState) {
         console.log('componentWillUpdate inside child component', nextProps, nextState);
