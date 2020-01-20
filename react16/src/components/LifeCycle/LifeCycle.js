@@ -9,6 +9,7 @@ class LifeCycle extends Component {
         this.state = {
             name: 'chien'
         }
+        this.myRef = React.createRef();
         console.log('Inside Constructor parent', props);
     }
     
@@ -17,6 +18,7 @@ class LifeCycle extends Component {
     }
     
     componentDidMount() {
+        this.myRef.current.focus();
         console.log('Inside ComponentDidMount parent');       
     }
     
@@ -51,6 +53,7 @@ class LifeCycle extends Component {
         return (
             <div>
                 <LifeCycleChild name={this.state.name} updateName={this.onHandleUpdateName.bind(this)}/>
+                <input ref={this.myRef} />
                 <button onClick={this.onHandleChangeName}>Change Name</button>
             </div>
         );
