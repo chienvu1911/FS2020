@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import LifeCycleChild from './LifeCycleChild';
 import withCoupon from '../HigherOrder/withCoupon';
 
@@ -54,6 +55,10 @@ class LifeCycle extends Component {
             </div>
         );
     }
+}
+
+LifeCycle.propTypes = {
+    name: PropTypes.string
 }
 
 const LifeCycleWithCoupon = withCoupon(LifeCycle);
