@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LifeCycleChild from './LifeCycleChild';
+import withCoupon from '../HigherOrder/withCoupon';
 
 class LifeCycle extends Component {
     constructor(props) {
@@ -55,4 +56,5 @@ class LifeCycle extends Component {
     }
 }
 
-export default LifeCycle;
+const LifeCycleWithCoupon = withCoupon(LifeCycle);
+export default LifeCycleWithCoupon;
