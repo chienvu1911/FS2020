@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import UpdateState from './UpdateState';
-import ErrorBoundary from './ErrorBoundary';
+import UpdateState from '../components/UpdateState/UpdateState';
+import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 
 function App() {
   return (
